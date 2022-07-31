@@ -1,0 +1,49 @@
+:root{
+    font-size: 18px;
+}
+
+body{
+  /* hexadecimal:   0-9,a-f   canal alfa:  0 - f*/
+  /* rgba : rgba(0-255,0-255,0-255,0-1) */
+  /* hsla:  hsla(0-180,) */
+  color: #333333;
+  /* font-size: 10px; */
+}
+a{
+  color: #212121;
+
+}
+header{
+  font-size: 14px;
+  color: #616161;
+}
+header a{
+  color: #616161;
+  font-size: 14px;
+  text-decoration: none;
+}
+header a:hover{
+color:#212121;
+}
+nav details summary{
+  font-weight: bold;
+}
+h1{
+  /* font-size: 3.75em; */
+  font-size: 60px;;
+}
+h2{
+  font-size:2em ;
+}
+h3{
+  font-size: 1.5em;
+}
+/* li{
+   font-size: 3rem; 
+} */
+
+/* @media screen and (max-width:600px) {
+  body{
+    font-size: 5px;
+  }
+} */
