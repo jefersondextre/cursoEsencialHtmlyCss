@@ -1,29 +1,58 @@
+@font-face{
+  font-family: "charter-regular-jefrito";
+  src:url("/src/charter-regular.otf");
+  font-style: normal;
+  font-wight:400 ;
+}
+@font-face {
+  font-family: "charter-bold-italic-jefrito";
+  src: url("/src/charter-bold-italic.otf");
+  font-style: italic;
+  font-wight: bold;
+}
+@font-face {
+  font-family: "charter-bold-jefrito";
+  src: url("/src/charter-bold.otf");
+  font-style: normal;
+  font-wight: bold;
+}
+@font-face {
+  font-family: "charter-italic-jefrito";
+  src: url("/src/charter-italic.otf");
+  font-style: italic;
+  font-wight: 400;
+}
 :root{
     font-size: 18px;
+    --gray30:#212121;
+    --gray20:#212429 ;
+    --gray10:#616161;
 }
 
 body{
   /* hexadecimal:   0-9,a-f   canal alfa:  0 - f*/
   /* rgba : rgba(0-255,0-255,0-255,0-1) */
   /* hsla:  hsla(0-180,) */
-  color: #333333;
+  color: var(--gray30);
   /* font-size: 10px; */
+  font-family: "charter-bold-jefrito",system-ui;
 }
 a{
-  color: #212121;
+  color: var(--gray30);
 
 }
 header{
   font-size: 14px;
-  color: #616161;
+  --gray10:red;
+  color: var(--gray10);
 }
 header a{
-  color: #616161;
+  color: var(--gray10);
   font-size: 14px;
   text-decoration: none;
 }
 header a:hover{
-color:#212121;
+color:var(--gray30);
 }
 nav details summary{
   font-weight: bold;
