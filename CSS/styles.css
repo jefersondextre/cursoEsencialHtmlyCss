@@ -1,4 +1,4 @@
-@font-face{
+/* @font-face{
   font-family: "charter-regular-jefrito";
   src:url("/src/charter-regular.otf");
   font-style: normal;
@@ -21,7 +21,7 @@
   src: url("/src/charter-italic.otf");
   font-style: italic;
   font-wight: 400;
-}
+} */
 :root{
     font-size: 18px;
     --gray30:#212121;
@@ -35,7 +35,9 @@ body{
   /* hsla:  hsla(0-180,) */
   color: var(--gray30);
   /* font-size: 10px; */
-  font-family: "charter-bold-jefrito",system-ui;
+  /* font-family: "charter-bold-jefrito",system-ui; */
+  font-family: 'Roboto',
+    sans-serif;
 }
 a{
   color: var(--gray30);
@@ -67,6 +69,46 @@ h2{
 h3{
   font-size: 1.5em;
 }
+
+pre{
+  background: #FEC62E;
+}
+.hero{
+
+  /* background: red; */
+  height: 350px;
+  background-image: linear-gradient(to top, rgb(255,255, 255,.3) ,transparent), 
+                    url("/images/patron-1.svg" );
+  /* background-repeat: no-repeat; */
+  /* background-position: right -70px bottom; */
+  /* background-size: cover; */
+}
+.section-content{
+  counter-reset: titleList;
+}
+.section-content h3::after{
+  content:'';
+  width: 32px;
+  height: 4px;
+  background:var(--gray30);
+  display: inline-block;
+}
+
+.section-content h3{
+  counter-increment: titleList;
+}
+.section-content h3::before{
+/* content:".-" counter(titleList,upper-roman); */
+content: counter(titleList, decimal) ".-";
+}
+
+
+
+
+
+/* ::selection{
+  background-color: red;
+} */
 /* li{
    font-size: 3rem; 
 } */
