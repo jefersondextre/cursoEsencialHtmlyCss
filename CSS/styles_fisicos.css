@@ -28,7 +28,9 @@
   --gray20: #212429;
   --gray10: #616161;
 }
-
+html{
+  scroll-behavior: smooth;
+}
 body {
   /* hexadecimal:   0-9,a-f   canal alfa:  0 - f*/
   /* rgba : rgba(0-255,0-255,0-255,0-1) */
@@ -188,6 +190,11 @@ blockquote{
 }
 .header-content{
     position: relative;
+}
+.header{
+  border: 1px solid red;
+  position: sticky;
+  top:0;
 }
 .main{
     /* border: 1px solid red; */
