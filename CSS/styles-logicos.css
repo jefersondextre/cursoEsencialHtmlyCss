@@ -362,7 +362,7 @@ margin-block-end: 24px;
   color: var(--white20);
 }
 
-@media screen and (min-width:1366px){
+@media screen and (min-width:1024px){
 .header-content {
     position: relative;
   }
@@ -403,6 +403,6 @@ margin-block-end: 24px;
 font-size: 1.5em;
   }
   p{
-  font-size: 1.2em;
+  font-size: 1em;
   }
 }
